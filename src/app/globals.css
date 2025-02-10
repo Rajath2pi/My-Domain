@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/*  */
+
+.portfolio-banner{
+    /* height: 500px; */
+    background-image: linear-gradient(to left, black, rgb(75, 73, 73), rgb(47, 44, 44), black, black, black);
+    font-family: "Maven Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.gradient-overlay{
+    position: relative;
+    display: inline-block;
+}
+.gradient-overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: linear-gradient(
+        to right, 
+        rgba(17, 17, 17, 0.953), 
+        rgba(48, 48, 48, 0.8), 
+        rgba(126, 123, 123, 0.2), 
+        rgba(131, 123, 123, 0.1), 
+        rgba(126, 123, 123, 0.4), 
+        rgba(0, 0, 0, 0.8), 
+        rgba(1, 1, 1, 0.8)        
+      );
+       /* Dark left edge */
+       /* More transparent middle */
+
+       /* Fully transparent center */
+       /* More transparent middle */
+
+       /* Dark right edge */
+}
+
+.card-gradient{
+    background-image: linear-gradient(to bottom, black, rgb(75, 73, 73), rgb(47, 44, 44), black, black, black);
+}
+
+.profile-image{
+    max-height: 500px;
+}
+
+.row, .col {
+    margin-right: 0!important;
+    padding: 0 !important; 
+}
+
