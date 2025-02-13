@@ -24,7 +24,7 @@ export default async function ContactMe() {
 
     return (
         <>
-            <div className="relative mt-0 row">
+            <div className="relative mt-0 row max-[510px]:h-screen bg-slate-500">
                 <div className="col-12 h-80 mt-10 bg-slate-600 relative z-10 p-10">
                     <h1 className="text-blue-300 text-6xl ml-5 mt-10">Get in touch</h1>
                     <p className="text-gray-300 ml-5 mt-4 max-w-96">
@@ -38,7 +38,7 @@ export default async function ContactMe() {
                         <h2 className="mt-20 text-gray-100 text-3xl">Hello there...</h2>
                     </div>
                 </div>
-                <div className="bg-slate-500">
+                <div className="">
                     <div className="flex flex-wrap gap-4 relative max-w-full justify-center md:my-20 max-[770px]:my-10">
                         {data?.contact && data.contact.map((contactDetails: any, index: number) => {
                             const colors = ["bg-blue-300", "bg-gray-300", "bg-green-100", "bg-red-100", "bg-purple-100"];
