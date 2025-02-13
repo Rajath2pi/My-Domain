@@ -1,14 +1,6 @@
 'use server';
 import Image from "next/image"
-import HtmlIcon from "@/assets/Images/icons/icons8-html-5-48.png";
-import CssIcon from "@/assets/Images/icons/icons8-css-48.png";
-import JsIcon from "@/assets/Images/icons/icons8-javascript-48.png";
-import AngularIcon from "@/assets/Images/icons/icons8-angular-48.png";
-import ReactIcon from "@/assets/Images/icons/icons8-react-80.png";
-import VsCodeIcon from "@/assets/Images/icons/icons8-visual-studio-code-2019-48.png";
-import ProfileImage from "@/assets/Images/profile-image.jpg";
 import { staticDataController } from "@/assets/controllers/staticDataController";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 export type Profile = {
     profileName: string,

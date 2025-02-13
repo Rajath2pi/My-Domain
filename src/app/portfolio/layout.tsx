@@ -1,5 +1,5 @@
-import Footer from "../widget/footer"
-import NavBar from "../widget/navbar"
+import Footer from "../widget/portfolio/footer"
+import NavBar from "../widget/portfolio/navbar"
 
 export default function PortfolioLayout({
     children,

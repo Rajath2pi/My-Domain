@@ -1,4 +1,4 @@
-import {Profile} from '@/app/components/portfolio/banner'
+import {Profile} from '@/app/portfolio/components/portfolio/banner'
 import fetStaticData from '../apicalls/getStaticData'
 
 

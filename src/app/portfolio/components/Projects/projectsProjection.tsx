@@ -1,7 +1,6 @@
 'use client';
 import CollapsableSideNav from "@/app/widget/collapsableSideNav";
 import ContentCard from "@/app/widget/card";
-import { staticDataController } from "@/assets/controllers/staticDataController";
 import { useState } from "react";
 
 export default function ProjectsProjection(props: { data: any }) {

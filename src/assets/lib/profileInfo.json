@@ -118,11 +118,6 @@
             "key": "LinkedIn",
             "image": "/images/icons/icons8-linkedin-48.png",
             "route": "https://www.linkedin.com/in/rajath-r-patil-42a1a2236"
-        },
-        {
-            "key": "Phone",
-            "image": "/images/icons/icons8-phone-48.png",
-            "route": "#"
         }
     ],
     "workExperienceData": [

@@ -2,7 +2,7 @@
 import CollapsableSideNav from "@/app/widget/collapsableSideNav";
 import ContentCard from "@/app/widget/card";
 import { staticDataController } from "@/assets/controllers/staticDataController";
-import ProjectsProjection from "@/app/components/Projects/projectsProjection";
+import ProjectsProjection from "@/app/portfolio/components/Projects/projectsProjection";
 
 export default async function Projects() {
 

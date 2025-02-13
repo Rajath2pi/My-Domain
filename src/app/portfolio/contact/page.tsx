@@ -3,7 +3,24 @@ import { staticDataController } from "@/assets/controllers/staticDataController"
 import Image from "next/image"
 
 export default async function ContactMe() {
-const { statusCode, data, statusMessage } = await staticDataController.fetchStaticData(`./src/assets/lib/profileInfo.json`);
+    const { statusCode, data, statusMessage } = await staticDataController.fetchStaticData(`./src/assets/lib/profileInfo.json`);
+
+
+    function getBgColor(index: number, total: number) {
+        switch (total % index) {
+            case 1:
+                return 'bg-blue-300';
+            case 2:
+                return 'bg-gray-300';
+            case 3:
+                return 'bg-green-100';
+            case 4:
+                return 'bg-red-100';
+            case 5:
+                return 'ba-purple-100';
+            default: return 'bg-white';
+        }
+    }
 
     return (
         <>
@@ -23,9 +40,23 @@ const { statusCode, data, statusMessage } = await staticDataController.fetchStat
                 </div>
                 <div className="bg-slate-500">
                     <div className="flex flex-wrap gap-4 relative max-w-full justify-center md:my-20 max-[770px]:my-10">
-                        <ContentCard classname="text-center min-w-40 max-h-fit bg-blue-300" heading={data.contact[0].key} subHeading = {undefined} content={{ type: "button",  description: undefined, buttonData: [data.contact[0]] }} />
+                        {data?.contact && data.contact.map((contactDetails: any, index: number) => {
+                            const colors = ["bg-blue-300", "bg-gray-300", "bg-green-100", "bg-red-100", "bg-purple-100"];
+                            const colorClass = colors[index % colors.length]; // Ensure safe modulo operation
+
+                            return (
+                                <ContentCard
+                                    key={`contact_${index}`}
+                                    classname={`text-center min-w-40 max-h-fit ${colorClass}`}
+                                    heading={contactDetails.key}
+                                    subHeading={undefined}
+                                    content={{ type: "button", description: undefined, buttonData: [contactDetails] }}
+                                />
+                            );
+                        })}
+                        {/* <ContentCard classname="text-center min-w-40 max-h-fit bg-blue-300" heading={data.contact[0].key} subHeading = {undefined} content={{ type: "button",  description: undefined, buttonData: [data.contact[0]] }} />
                         <ContentCard classname="text-center min-w-40 max-h-fit bg-gray-300" heading={data.contact[1].key} subHeading = {undefined} content={{ type: "button", description: undefined, buttonData: [data.contact[1]]}} />
-                        <ContentCard classname="text-center min-w-40 max-h-fit bg-green-100" heading={data.contact[2].key} subHeading = {undefined} content={{ type: "button",  description: undefined, buttonData: [data.contact[2]] }} />
+                        <ContentCard classname="text-center min-w-40 max-h-fit bg-green-100" heading={data.contact[2].key} subHeading = {undefined} content={{ type: "button",  description: undefined, buttonData: [data.contact[2]] }} /> */}
                         {/* <ContentCard classname="text-center min-w-40 max-h-fit bg-red-100" heading={data.contact[2].key} content={{ type: "button", buttonData: [data.contact[2]] }} />
                         <ContentCard classname="text-center min-w-40 max-h-fit bg-purple-100" heading={data.contact[2].key} content={{ type: "button", buttonData: [data.contact[2]] }} /> */}
                     </div>

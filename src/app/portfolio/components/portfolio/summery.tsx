@@ -1,5 +1,5 @@
 import { staticDataController } from "@/assets/controllers/staticDataController";
-import ContentCard from "../../widget/card";
+import ContentCard from "../../../widget/card";
 
 
 export default async function Summery() {

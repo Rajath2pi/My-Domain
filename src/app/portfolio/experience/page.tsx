@@ -1,5 +1,5 @@
 'use server'
-import CompanyExperience from "@/app/components/Experience/companyexperience"
+import CompanyExperience from "../components/Experience/companyexperience";
 import { staticDataController } from "@/assets/controllers/staticDataController";
 import { WorkExperienceData } from "@/assets/modals/WorkExperienceData";
 import Image from "next/image"
