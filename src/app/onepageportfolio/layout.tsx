@@ -8,7 +8,7 @@ export default function PortfolioLayout({
 }) {
     return (
         <>
-            <NavBar/>
+            {/* <NavBar/> */}
             {children}
             <Footer/>
         </>

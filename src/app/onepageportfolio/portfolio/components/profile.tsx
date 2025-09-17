@@ -1,5 +1,5 @@
-import BannerLayout from "../components/portfolio/banner";
-import Summery from "../components/portfolio/summery";
+import BannerLayout from "./portfolio/banner";
+import Summery from "./portfolio/summery";
 
 
 export default function PortfolioDashboard() {
