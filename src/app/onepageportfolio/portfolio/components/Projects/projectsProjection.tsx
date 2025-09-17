@@ -14,9 +14,9 @@ export default function ProjectsProjection(props: { data: any }) {
   }
 
   return (
-    <section className="">
+    <section className="bg-[url('/images/banner/summary-banner.png')] bg-cover bg-center">
       {/* Header Section */}
-      <div className="bg-slate-400 p-10  shadow-md">
+      <div className="p-10  shadow-md">
         <h2 className="text-blue-200 text-3xl font-semibold leading-snug">
           Projects Are a Key Part of Any Job
         </h2>
@@ -29,7 +29,7 @@ export default function ProjectsProjection(props: { data: any }) {
       </div>
 
       {/* Main Content */}
-      <div className="h-screen flex relative bg-slate-200">
+      <div className="h-screen flex relative">
         {/* Side Navigation */}
         {props?.data?.projects && (
           <CollapsableSideNav
@@ -43,7 +43,7 @@ export default function ProjectsProjection(props: { data: any }) {
           <div className="m-4 md:m-8 lg:m-10">
             {selectedProject && (
               <ContentCard
-                classname="bg-slate-300"
+                classname="bg-slate-400"
                 heading={selectedProject.title}
                 subHeading={selectedProject.subTitle}
                 content={{

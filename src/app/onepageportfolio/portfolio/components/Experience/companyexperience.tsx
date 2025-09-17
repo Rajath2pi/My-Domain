@@ -17,7 +17,7 @@ export default function CompanyExperience({
       {/* Left Column (Company Info) */}
       <div
         className={`col-md-6 ${
-          isEven ? "" : "bg-slate-400 md:rounded-r-3xl"
+          isEven ? "" : "bg-slate-500 md:rounded-r-3xl"
         }`}
       >
         <div className="my-10 flex justify-center max-[450px]:ml-5">

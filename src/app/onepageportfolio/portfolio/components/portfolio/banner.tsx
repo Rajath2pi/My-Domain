@@ -18,7 +18,7 @@ export default async function BannerLayout() {
   if (!data) return null;
 
   return (
-    <section className="bg-slate-600 text-white overflow-hidden">
+    <section className="bg-[url('/images/banner/banner-1.png')] bg-cover bg-center text-white overflow-hidden shadow-xl">
       <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center">
         {/* Left Section: Profile Info */}
         <header className="w-full lg:w-1/2 p-6 lg:p-10">
@@ -49,14 +49,15 @@ export default async function BannerLayout() {
         {/* Right Section: Profile Image */}
         <div className="w-full lg:w-1/2 flex justify-center lg:justify-end p-6">
           <Image
-            width={600}
-            height={500}
+            width={440}
+            height={450}
             src={data.profileImage}
             alt={`${data.profileName} profile photo`}
-            className="rounded-xl shadow-lg"
+            className="rounded-xl shadow-2xl"
             priority
           />
         </div>
+
       </div>
     </section>
   );

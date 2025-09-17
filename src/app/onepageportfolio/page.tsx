@@ -8,16 +8,28 @@ import Skills from "./portfolio/components/skills";
 
 
 
-export default function OnePagePortfolio(){
+export default function OnePagePortfolio() {
 
-    return(
+    return (
         <>
-            <PortfolioDashboard/>
-            <Experience />
-            <Skills />
-            <Projects />
-            <Education />
-            <ContactMe />
+            <section id="home">
+                <PortfolioDashboard />
+            </section>
+            <section id="experience" >
+                <Experience />
+            </section>
+            <section id="skills">
+                <Skills />
+            </section>
+            <section id="projects">
+                <Projects />
+            </section>
+            <section id="education">
+                <Education />
+            </section>
+            <section id="contact">
+                <ContactMe />
+            </section>
         </>
     )
 }

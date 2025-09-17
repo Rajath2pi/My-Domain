@@ -24,16 +24,17 @@ export default async function ContactMe() {
 
     return (
         <>
-            <div className="relative max-h-screen mt-5 row max-[510px]:h-screen bg-slate-300">
-                <div className="col-12 h-80 bg-slate-400 relative z-10 p-10">
-                    <h1 className="text-blue-500 text-6xl ml-5 mt-10">Get in touch</h1>
-                    <p className="text-gray-700 text-lg ml-5 mt-4 max-w-96">
+            <div className="relative max-h-screen mt-5 row max-[510px]:h-screen">
+                <div className="col-12 h-80 bg-slate-400 relative z-10 p-10 ">
+                    <h1 className="text-slate-200 text-5xl ml-5 mt-10">Get in touch</h1>
+                    <p className="text-gray-700 text-lg ml-5 mt-4 max-w-96 ">
                         Want to get in touch with me, Go through the contact details below.
                     </p>
                 </div>
 
-                <div className="col-6 bg-slate-500 rounded-full absolute top-5 right-5 transform translate-x z-20 h-80 max-[750px]:hidden">
-                    <div className="mt-5 ml-20 flex">
+                <div className="col-6 bg-slate-500 rounded-full absolute top-5 right-5 transform translate-x z-20 h-80 max-[750px]:hidden" >
+                {/* bg-slate-300 bg-[url('/images/banner/contact.png')] bg-cover bg-center"> */}
+                    <div className="mt-5 ml-20 flex ">
                         <Image className="" width={350} height={300} src={'/images/appcontent/business-hand-shake.png'} alt={'_hand-shake'} />
                         <h2 className="mt-20 text-gray-100 text-3xl">Hello there...</h2>
                     </div>

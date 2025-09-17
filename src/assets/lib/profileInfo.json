@@ -10,7 +10,7 @@
         "/images/icons/icons8-visual-studio-code-2019-48.png"
     ],
     "profileImage": "/images/profile-image.jpg",
-    "summery": "Results-driven Front End Developer with nearly 2+ years of experience in developing responsive and user-friendly web applications. Skilled in leveraging a diverse range of front-end technologies, including HTML5, CSS3, JavaScript, Angular, ReactJS, to deliver innovative solutions. Proven track record of collaborating within cross-functional teams to drive project success. Eager to contribute technical proficiency, creativity, and a strong work ethic to a dynamic development team.",
+    "summery": "Results-driven Front End Developer with 3 years of experience in developing responsive and user-friendly web applications. Skilled in leveraging a diverse range of front-end technologies, including HTML5, CSS3, JavaScript, Angular, ReactJS, to deliver innovative solutions. Proven track record of collaborating within cross-functional teams to drive project success. Eager to contribute technical proficiency, creativity, and a strong work ethic to a dynamic development team.",
     "skills": [
         {
             "skillDomain": "Frontend",
@@ -48,6 +48,36 @@
             ]
         },
         {
+            "skillDomain": "Backend",
+            "skillKeys": [
+                {
+                    "key": "Node.js",
+                    "image": "/images/icons/icon-nodejs.jpeg",
+                    "route": "#"
+                }
+            ]
+        },
+        {
+            "skillDomain": "UI",
+            "skillKeys": [
+                {
+                    "key": "BOOTSTRAP",
+                    "image": "/images/icons/icons8-bootstrap-48.png",
+                    "route": "#"
+                },
+                {
+                    "key": "TAILWIND",
+                    "image": "/images/icons/icons8-tailwind-css-48.png",
+                    "route": "#"
+                },
+                {
+                    "key": "MATERIAL UI",
+                    "image": "/images/icons/icons8-material-ui-48.png",
+                    "route": "#"
+                }
+            ]
+        },
+        {
             "skillDomain": "Tools",
             "skillKeys": [
                 {
@@ -73,26 +103,6 @@
                 {
                     "key": "GIT",
                     "image": "/images/icons/icons8-git-48.png",
-                    "route": "#"
-                }
-            ]
-        },
-        {
-            "skillDomain": "UI",
-            "skillKeys": [
-                {
-                    "key": "BOOTSTRAP",
-                    "image": "/images/icons/icons8-bootstrap-48.png",
-                    "route": "#"
-                },
-                {
-                    "key": "TAILWIND",
-                    "image": "/images/icons/icons8-tailwind-css-48.png",
-                    "route": "#"
-                },
-                {
-                    "key": "MATERIAL UI",
-                    "image": "/images/icons/icons8-material-ui-48.png",
                     "route": "#"
                 }
             ]

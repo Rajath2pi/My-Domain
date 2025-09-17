@@ -11,7 +11,7 @@ export default async function Experience() {
   );
 
   return (
-    <section className="bg-slate-300 py-10">
+    <section className="bg-slate-400 md:py-10">
       {/* Intro Section */}
       <div className="row">
         <div className="bg-slate-500 md:pt-10 col-md-6 md:rounded-r-full flex items-center">

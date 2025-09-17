@@ -18,7 +18,7 @@ export default function CollapsableSideNav(props: {
   const [activeNavIndex, setActiveNavIndex] = useState(0);
 
   const itemHeight = 60; // height per nav item
-  const visibleItems = 4; // max items visible at once
+  const visibleItems = 3; // max items visible at once
 
   function handleNavState() {
     setOpenNav((prev) => !prev);
@@ -40,7 +40,7 @@ export default function CollapsableSideNav(props: {
         ${openNav ? "w-14 h-28" : "w-80 h-fit"}`}
     >
       {/* Collapse Up */}
-      {!openNav && props.navContents.length > visibleItems && (
+      {!openNav && props.navContents.length >= visibleItems && (
         <Image
           className="absolute left-1/3 top-0 z-10 cursor-pointer"
           width={32}
@@ -52,13 +52,13 @@ export default function CollapsableSideNav(props: {
       )}
 
       {/* Navigation Items */}
-      <div className="relative h-fit overflow-hidden my-6">
+      <div className="relative h-fit max-h-44 overflow-hidden my-6">
         {props.navContents.map((item, index) => {
           const isActive = activeNavIndex === index;
           return (
             <div
               key={item.id || index}
-              className={`overflow-hidden text-center h-12 w-60 p-2 m-3 rounded-full cursor-pointer
+              className={`overflow-hidden text-center max-h-12 w-60 p-2 m-3 rounded-full cursor-pointer
                 transform transition-all duration-300 ease-in-out
                 ${openNav ? "hidden" : ""} 
                 ${isActive ? "bg-blue-400 scale-110 shadow-md" : "bg-white hover:bg-slate-100"}`}
@@ -80,7 +80,7 @@ export default function CollapsableSideNav(props: {
       </div>
 
       {/* Collapse Down */}
-      {!openNav && props.navContents.length > visibleItems && (
+      {!openNav && props.navContents.length >= visibleItems && (
         <Image
           className="absolute left-1/3 bottom-0 z-10 cursor-pointer"
           width={32}
