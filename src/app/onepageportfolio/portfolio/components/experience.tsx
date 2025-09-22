@@ -11,10 +11,10 @@ export default async function Experience() {
   );
 
   return (
-    <section className="bg-slate-400 md:py-10">
+    <section className=" md:py-10">
       {/* Intro Section */}
       <div className="row">
-        <div className="bg-slate-500 md:pt-10 col-md-6 md:rounded-r-full flex items-center">
+        <div className="bg-black bg-opacity-50 md:pt-10 col-md-6 md:rounded-r-full flex items-center">
           <div className="m-10">
             <h2 className="text-white text-xl">Wanna know my journey?</h2>
             <h3 className="text-blue-200 mt-6 text-4xl md:text-5xl leading-snug">
@@ -24,7 +24,7 @@ export default async function Experience() {
         </div>
 
         {/* Image Section */}
-        <div className="col-md-6 hidden md:flex justify-center items-center">
+        {/* <div className="col-md-6 hidden md:flex justify-center items-center">
           <Image
             className="mt-10"
             width={400}
@@ -32,7 +32,7 @@ export default async function Experience() {
             src="/images/appcontent/experience1.jpg"
             alt="experience illustration"
           />
-        </div>
+        </div> */}
       </div>
 
       {/* Work Experience Section */}

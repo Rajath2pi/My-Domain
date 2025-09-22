@@ -11,8 +11,8 @@ export default async function Summary() {
 
   return (
     <section className="bg-[url('/images/banner/banner-2.png')] bg-cover bg-center py-16 px-6 md:px-12">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-blue-200 text-4xl md:text-5xl font-bold text-center mb-8">
+      <div className="max-w-5xl mx-auto opacity-70">
+        <h2 className="text-gray-800 text-4xl md:text-5xl font-bold text-center mb-8">
           Summary
         </h2>
         <ContentCard
@@ -23,7 +23,7 @@ export default async function Summary() {
             description: [data.summery],
             buttonData: undefined,
           }}
-          classname="bg-slate-600 text-blue-100 text-lg leading-relaxed text-center mx-auto p-8 rounded-xl shadow-md"
+          classname="bg-black text-blue-100 text-lg leading-relaxed text-center mx-auto p-8 rounded-xl shadow-md"
         />
       </div>
     </section>

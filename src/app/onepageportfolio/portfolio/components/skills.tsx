@@ -46,7 +46,7 @@ export default async function Skills() {
                     description: undefined,
                     buttonData: skill.skillKeys,
                   }}
-                  classname="bg-slate-400 rounded-xl shadow-md hover:shadow-lg transition"
+                  classname="bg-gray-700 bg-opacity-70 text-gray-300 rounded-xl shadow-md hover:shadow-lg transition"
                 />
               </CarouselItem>
             ))}

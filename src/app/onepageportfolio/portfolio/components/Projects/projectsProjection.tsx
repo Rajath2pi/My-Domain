@@ -43,7 +43,7 @@ export default function ProjectsProjection(props: { data: any }) {
           <div className="m-4 md:m-8 lg:m-10">
             {selectedProject && (
               <ContentCard
-                classname="bg-slate-400"
+                classname="bg-gray-800 text-gray-400 bg-opacity-90"
                 heading={selectedProject.title}
                 subHeading={selectedProject.subTitle}
                 content={{

@@ -11,7 +11,7 @@ import Skills from "./portfolio/components/skills";
 export default function OnePagePortfolio() {
 
     return (
-        <>
+        <div className="bg-gray-800">
             <section id="home">
                 <PortfolioDashboard />
             </section>
@@ -30,6 +30,6 @@ export default function OnePagePortfolio() {
             <section id="contact">
                 <ContactMe />
             </section>
-        </>
+        </div>
     )
 }

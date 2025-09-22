@@ -17,7 +17,7 @@ export default function CompanyExperience({
       {/* Left Column (Company Info) */}
       <div
         className={`col-md-6 ${
-          isEven ? "" : "bg-slate-500 md:rounded-r-3xl"
+          isEven ? "" : "md:rounded-r-3xl bg-gray-700 bg-opacity-50"
         }`}
       >
         <div className="my-10 flex justify-center max-[450px]:ml-5">
@@ -31,8 +31,7 @@ export default function CompanyExperience({
             />
           )}
           <div
-            className={`m-2 ${
-              isEven ? "text-slate-800" : "text-white"
+            className={`m-2 ${"text-gray-300"
             } max-[450px]:text-lg text-2xl`}
           >
             {workData.companyName}
@@ -50,8 +49,8 @@ export default function CompanyExperience({
       <div
         className={`col-md-6 ${
           isEven
-            ? "md:bg-slate-400 md:rounded-l-3xl"
-            : "max-[640px]:bg-slate-400 md:rounded-l-3xl"
+            ? "bg-gray-700 bg-opacity-50 md:rounded-l-3xl"
+            : "md:rounded-l-3xl"
         }`}
       >
         <div className="m-12">
@@ -59,16 +58,11 @@ export default function CompanyExperience({
             {/* Designations */}
             {workData.designations?.map((desig, i) => (
               <div key={`designation_${i}`}>
-                <h3 className="text-slate-800 text-2xl">
+                <h3 className="text-gray-300 text-2xl">
                   {desig.designationName}
                 </h3>
                 <p
-                  className={`text-sm leading-6 italic ${
-                    isEven
-                      ? "md:text-gray-100"
-                      : "md:text-slate-600 max-[640px]:text-gray-100"
-                  }`}
-                >
+                  className={`text-sm leading-6 italic text-gray-400`}>
                   {desig.servedTime}
                 </p>
                 <hr className="text-white my-2" />
@@ -76,14 +70,14 @@ export default function CompanyExperience({
             ))}
 
             {/* Roles and Responsibilities */}
-            <h3 className="text-slate-600 text-2xl mt-4">
+            <h3 className="text-gray-300 text-2xl mt-4">
               Roles and Responsibilities:
             </h3>
             <ul
               className={`text-sm list-disc my-2 ml-5 leading-6 text-justify ${
                 isEven
-                  ? "md:text-slate-100"
-                  : "text-slate-600 max-[640px]:text-gray-100"
+                  ? "text-gray-400"
+                  : "text-gray-400 max-[640px]:text-gray-400"
               }`}
             >
               {workData.rolesAndResponsibilities?.map((role, i) => (

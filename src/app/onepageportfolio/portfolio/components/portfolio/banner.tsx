@@ -53,7 +53,7 @@ export default async function BannerLayout() {
             height={450}
             src={data.profileImage}
             alt={`${data.profileName} profile photo`}
-            className="rounded-xl shadow-2xl"
+            className="rounded-full shadow-2xl w-2/3"
             priority
           />
         </div>

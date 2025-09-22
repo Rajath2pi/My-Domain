@@ -38,7 +38,7 @@ export default function ContentCard(props: {
         {/* Content Area */}
         <div className="max-h-80 overflow-y-auto scrollbar-hide px-1">
           {props.subHeading && (
-            <h2 className="text-xl text-slate-700 mb-3 italic">
+            <h2 className="text-xl text-gray-400 bg-opacity-40 mb-3 italic">
               {props.subHeading}
             </h2>
           )}

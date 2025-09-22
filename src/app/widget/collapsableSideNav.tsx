@@ -35,7 +35,7 @@ export default function CollapsableSideNav(props: {
 
   return (
     <div
-      className={`relative my-4 bg-slate-500 rounded-r-3xl z-10 sticky top-1/3 opacity-90 p-2 shadow-lg
+      className={`my-4 bg-gray-700 rounded-r-3xl z-10 sticky top-1/3 opacity-90 p-2 shadow-lg
         transition-all duration-300 ease-in-out 
         ${openNav ? "w-14 h-28" : "w-80 h-fit"}`}
     >

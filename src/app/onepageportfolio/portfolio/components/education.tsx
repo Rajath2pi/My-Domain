@@ -6,12 +6,12 @@ export default async function Education() {
   );
 
   return (
-    <section className="container mx-auto px-4">
+    <section className="container mx-auto px-4  py-10 sm:py-0">
       <div className="row items-center">
         {/* Video Section */}
         <div className="col-md-6 flex justify-center">
           <video
-            className="w-full max-w-lg"
+            className="w-full max-w-lg rounded-full p-10"
             autoPlay
             loop
             muted
@@ -35,18 +35,18 @@ export default async function Education() {
           ) => (
             <div
               key={index}
-              className="col-md-6 bg-slate-200 rounded-2xl shadow-md p-8 mt-6 md:mt-0 xs:mb-10"
+              className="col-md-6 bg-gray-700 bg-opacity-50 rounded-2xl shadow-md p-8 mt-6 md:mt-0 xs:mb-10"
             >
-              <h3 className="text-xl text-gray-500 font-medium mb-2">
+              <h3 className="text-xl text-gray-300 font-medium mb-2">
                 I&apos;m a Graduate
               </h3>
               <h2 className="text-4xl font-bold text-blue-500 mb-3">
                 {education.specialization}
               </h2>
-              <h3 className="text-lg text-gray-600 font-medium">
+              <h3 className="text-lg text-gray-300 font-medium">
                 Completed in <span className="font-semibold">{education.graduateYear}</span> from
               </h3>
-              <h2 className="text-2xl text-gray-700 font-semibold mt-2">
+              <h2 className="text-2xl text-gray-300 font-semibold mt-2">
                 {education.Collage}, {education.place}
               </h2>
             </div>
