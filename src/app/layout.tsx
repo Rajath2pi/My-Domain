@@ -18,9 +18,8 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet" />
       </head>
       <body>
-        <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-
-        {children}
+        {/* <script src="../path/to/flowbite/dist/flowbite.min.js"></script> */}
+        <main>{children}</main>
       </body>
     </html>
   )
