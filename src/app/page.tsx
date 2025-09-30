@@ -43,7 +43,7 @@ export default function HomePage() {
                 <div className="text-white bg-gray-600 md:w-1/2 rounded-md p-1">
                     <h1 className="text-3xl font-semibold text-gray-300 p-2">Portfolio and Projects:</h1>
                     <ul className="my-2 mx-2">
-                        <li className="hover:bg-gray-500 font-semibold bg-gray-800 items-center px-5 py-2 rounded-lg my-2"><a href="https://my-domain-silk.vercel.app/onepageportfolio" target="_blank" className="text-gary-400 text-2xl">Portfolio <span className="text-gray-500 text-sm my-auto">Click to view</span></a></li>
+                        <li className="hover:bg-gray-500 font-semibold bg-gray-800 items-center px-5 py-2 rounded-lg my-2"><a href="https://my-domain-silk.vercel.app/onepageportfolio" target="_blank" className="text-gary-400 text-2xl">Professional Bio <span className="text-gray-500 text-sm my-auto">Click to view</span></a></li>
                         <li className="hover:bg-gray-500 font-semibold bg-gray-800 items-center px-5 py-2 rounded-lg my-2"><a href="https://my-ecommerce-dashboard-4od4.vercel.app/home" target="_blank" className="text-gary-400 text-2xl mx-2">Business Dashboard</a></li>
                         <li className="font-semibold bg-gray-800 items-center px-5 cursor-not-allowed py-5 rounded-lg">Node Project coming soon...</li>
                     </ul>
