@@ -10,7 +10,7 @@
         "/images/icons/icons8-visual-studio-code-2019-48.png"
     ],
     "profileImage": "/images/profile-image.jpg",
-    "summery": "Results-driven Front End Developer with 3 years of experience in developing responsive and user-friendly web applications. Skilled in leveraging a diverse range of front-end technologies, including HTML5, CSS3, JavaScript, Angular, ReactJS, to deliver innovative solutions. Proven track record of collaborating within cross-functional teams to drive project success. Eager to contribute technical proficiency, creativity, and a strong work ethic to a dynamic development team.",
+    "summery": "Accomplished Front-End Developer with 3+ years of experience in building scalable Single Page Applications. Expertise in the modern front-end stack, including Angular, React with Next.js. Proven ability to improve performance, enhance SEO, and streamline development processes through best practices for optimizing scalable web applications.",
     "skills": [
         {
             "skillDomain": "Frontend",
@@ -127,7 +127,7 @@
         {
             "key": "LinkedIn",
             "image": "/images/icons/icons8-linkedin-48.png",
-            "route": "https://www.linkedin.com/in/rajath-r-patil-42a1a2236"
+            "route": "https://www.linkedin.com/in/rajath-r-patil-web-developer/"
         }
     ],
     "workExperienceData": [
@@ -144,11 +144,13 @@
                 }
             ],
             "rolesAndResponsibilities": [
-                "Led multiple brands, engaged with clients requirements to gather their feedback, and implemented their inputs in the most effective way.",
-                "Adapted to various team roles, seamlessly contributing to UI development when UI team members were unavailable.",
-                "Took ownership of bug fixes and quickly resolved live product issues.",
-                "Managed SEO by updating meta content and optimizing website performance.",
-                "Quickly adapted to new web technologies, seamlessly transitioning from Angular to React within a month, and actively contributing to projects in both technologies."
+                "Spearheaded the entire SDLC for high-performance web applications, managing feature delivery from requirement analysis to production deployment via Jenkins for Continuous Integration and Continuous Deployment (CI/CD).",
+                "Utilized deep knowledge of React and Angular best practices and modern architecture patterns to build scalable and maintainable features within the product suite.",
+                "Collaborated across Engineering and Product teams to translate high-level requirements into scalable Front-End solutions, ensuring a unified user experience(UX/UI) across the product suite.",
+                "Integrated dozens of RESTful APIs and third-party libraries, leveraging TypeScript and TDD best practices to guarantee code quality and stability for new features.",
+                "Executed and monitored build deployments, contributing to a 99.9% uptime for critical application updates and new features, ensuring a smooth and reliable delivery process under Agile Methodology.",
+                "Optimized page load speeds by 20% across the main application through code splitting and memoization, directly enhancing core application efficiency and user retention.",
+                "Communicated complex technical requirements to non-technical business partners to establish strategic partnerships, resulting in new feature implementations that contributed to revenue increase."
             ]
         },
         {
@@ -172,25 +174,30 @@
     ],
     "projects": [
         {
-            "title": "Super-app",
-            "subTitle": "Implementation of user friendly ,website Customizing Platform:",
+            "title": "Consumer-Apps",
+            "subTitle": "B2C Web Application: React.js (18+), Next.js (14+), Redux, Zustand, Tailwind CSS",
             "description": [
-                "Implemented a user-friendly website customization platform for SaaS subscribers, incorporating standardized templates, themes, customizable Sections and much more.",
-                "Enhanced user-friendliness and customer orientation, resulting in improved platform adoption.",
-                "Personal Growth: Learned platform implementation from scratch, improved HTML, CSS, and Bootstrap skills with complex functionality"
+                "Architected and developed a high-performance web application, improving page load speed by 40% through a hybrid rendering strategy (SSG, SSR, CSR), lazy loading, and memoization (validated by Google Lighthouse).",
+                "Implemented complex state logic using Redux Toolkit and Zustand for specific module requirements, ensuring predictable and centralized data flow.",
+                "Enhanced SEO and search engine crawlability by implementing schema markup and collaborated with industry leaders to deliver custom solutions."
             ]
         },
         {
-            "title": "Mymedic",
-            "subTitle": "",
+            "title": "MyMedic/Super-app",
+            "subTitle": "Enterprise SaaS B2B Platform: Angular (8, 16+), TypeScript, Bootstrap",
             "description": [
-                "Collaborated with prominent clients to customize our MyMedic application by tailoring based on their specific requirements. This involved close cooperation and communication to adopt the application to meet the unique needs and preferences of each client",
-                "Enhanced user-friendliness and customer orientation, resulting in improved platform adoption.",
-                "Integrated diverse third-party libraries including Firbase Cloud messaging, CDK DragDrops and Angular Editor seamlessly during the customization process. This strategic integration enhances the application's functionality by leveraging established tools, ensuring a robust and feature-rich user experience.",
-                "Optimized SEO by updating metadata and implementing schema markup.",
-                "Streamlined slot booking systems and order execution, enhancing order management across diagnostic, pharmacy, and doctor modules.",
-                "Developed user-friendly interfaces and responsive web applications using CSS, Bootstrap, AngularJS, and ReactJS, resulting in a 30% improvement in user satisfaction metrics.",
-                "Successfully fostered collaborative partnerships with industry leaders including VDC, Omega, Isha-clinic, Jeeone, GVK and more resulting in a significant increased revenue rate by 20%."
+                "Built a scalable B2B SaaS platform that streamlined slot booking and order management for diagnostic, pharmacy, and doctor modules, enhancing operational efficiency and reducing product creation time for new subscribers.",
+                "Architected the platform using a micro-frontend approach (if applicable in Angular, mention this) and leveraged the Angular CLI for efficient project management and build optimization.",
+                "Led customization for high-profile clients and integrated Firebase Cloud Messaging to enable real-time notifications, significantly improving user engagement."
+            ]
+        },
+         {
+            "title": "Personal Projects",
+            "subTitle": "Enterprise SaaS B2B Platform: Angular (8, 16+), TypeScript, Bootstrap",
+            "description": [
+                "Portfolio : https://my-domain-silk.vercel.app/",
+                "Business Dashboard: https://my-ecommerce-dashboard-4od4.vercel.app/",
+                "Other mini-Projects: https://web-app-fetures.vercel.app/"
             ]
         }
     ],
