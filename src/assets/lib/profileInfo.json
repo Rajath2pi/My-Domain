@@ -132,10 +132,26 @@
     ],
     "workExperienceData": [
         {
+            "companyName": "Hash Connect Integrated Services",
+            "place": "Bangalore, India",
+            "workType": "Full-time",
+            "totalWorkingYears": "Jan-2026 to Present",
+            "companyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-QYtXzCQCmLlsN94AIHQ8NqDhryZ_GOhDZg&s",
+            "designations": [
+                {
+                    "designationName": "Software Developer",
+                    "servedTime": "Jan-2024 to Present"
+                }
+            ],
+            "rolesAndResponsibilities": [
+                "Working in immence integrations over Lead management system, Product Information Management, Online Reputation Management Store locators and much more..."
+            ]
+        },
+        {
             "companyName": "HealthSignz Technologies Pvt Ltd",
             "place": "Bangalore, India",
             "workType": "Full-time",
-            "totalWorkingYears": "Nov-2022 to Present",
+            "totalWorkingYears": "Nov-2022 to Dec 2026",
             "companyLogo": "/images/icons/company1_logo.jpg",
             "designations": [
                 {
@@ -153,11 +169,12 @@
                 "Communicated complex technical requirements to non-technical business partners to establish strategic partnerships, resulting in new feature implementations that contributed to revenue increase."
             ]
         },
+        
         {
             "companyName": "HealthSignz Technologies Pvt Ltd",
             "place": "Bangalore, India",
             "workType": "Full-time",
-            "totalWorkingYears": "Nov-2022 to Present",
+            "totalWorkingYears": "Nov-2022 to Dec 2026",
             "companyLogo": "/images/icons/company1_logo.jpg",
             "designations": [
                 {
