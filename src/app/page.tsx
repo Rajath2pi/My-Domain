@@ -1,4 +1,4 @@
-import profileData from "@/assets/lib/profileinfo.json";
+import profileData from "@/assets/lib/profileInfo.json";
 import Hero from "@/components/portfolio/Hero";
 import Experience from "@/components/portfolio/Experience";
 import Skills from "@/components/portfolio/Skills";
