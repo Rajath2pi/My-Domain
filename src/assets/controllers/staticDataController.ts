@@ -1,6 +1,11 @@
 
-import { Profile } from '@/app/onepageportfolio/portfolio/components/portfolio/banner';
-import fetStaticData from '../apicalls/getStaticData'
+export type Profile = {
+  profileName: string;
+  jobTitle: string;
+  skillsImages: Array<string>;
+  profileImage: string;
+};
+import fetStaticData from '../apicalls/getStaticData';
 
 
 class StaticDataController{

@@ -1,55 +1,52 @@
-// app/page.tsx (Next.js 13+ with App Router)
+import profileData from "@/assets/lib/profileinfo.json";
+import Hero from "@/components/portfolio/Hero";
+import Experience from "@/components/portfolio/Experience";
+import Skills from "@/components/portfolio/Skills";
+import Projects from "@/components/portfolio/Projects";
+import Education from "@/components/portfolio/Education";
+import ContactMe from "@/components/portfolio/Contact";
+import NavBar from "./widget/portfolio/navbar";
+import Footer from "./widget/portfolio/footer";
+
 export default function HomePage() {
-    return (
-        <div className="min-h-screen flex items-center justify-center bg-black relative overflow-hidden">
-            {/* Background Gradient */}
-            <div className="absolute top-0 left-1/3 w-[500px] h-[300px] bg-teal-400/30 blur-3xl rounded-full -translate-x-1/3 -translate-y-1/3" />
-            <div className="absolute bottom-0 right-40 w-[500px] h-[300px] bg-purple-400/30 blur-3xl rounded-full translate-x-1/3 translate-y-1/3" />
+  return (
+    <>
+      <NavBar />
+      <div className="bg-[#0b0f19] text-[#e2e8f0] min-h-screen font-sans selection:bg-purple-500/30 selection:text-white relative overflow-hidden">
+        {/* Dynamic light glows and modern grid pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b0a_1px,transparent_1px),linear-gradient(to_bottom,#1e293b0a_1px,transparent_1px)] bg-[size:3rem_3rem] pointer-events-none z-0" />
+        <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-[radial-gradient(circle_at_center,rgba(99,102,241,0.08)_0,transparent_60%)] pointer-events-none z-0" />
+        <div className="absolute bottom-[20%] right-[-10%] w-[60%] h-[60%] bg-[radial-gradient(circle_at_center,rgba(168,85,247,0.06)_0,transparent_60%)] pointer-events-none z-0" />
+        <div className="absolute top-[40%] right-[20%] w-[40%] h-[40%] bg-[radial-gradient(circle_at_center,rgba(20,184,166,0.04)_0,transparent_60%)] pointer-events-none z-0" />
 
-            {/* Border */}
-            <div className="w-[90%] max-w-4xl py-10 rounded-md md:flex justify-between gap-5">
-                {/* Grid Overlay */}
-                <div className="absolute top-0 left-0 w-2/5 h-2/3 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_3px,transparent_3px),linear-gradient(to_bottom,rgba(255,255,255,0.05)_2px,transparent_2px)] bg-[size:40px_40px] pointer-events-none" />
-                {/* <div className="absolute top-0 left-10 w-[500px] h-[300px] bg-[#171717] blur-3xl rounded-full translate-x-1/3 translate-y-1/3" /> */}
-                {/* Content */}
-                <div className="relative z-10">
-                    {/* Assignment Label */}
-                    <div className="inline-block relative mb-8">
-                        {/* Shadow */}
-                        <div className="absolute inset-0 translate-x-1 translate-y-1 bg-gray-700 rounded-lg" />
-
-                        {/* Button */}
-                        {/* <div className="relative bg-yellow-400 text-black px-6 py-2 rounded-lg font-semibold text-lg tracking-widest">
-                            
-                        </div> */}
-                    </div>
-
-                    {/* Title */}
-                    <h1 className="text-white font-extrabold text-5xl leading-tight">
-                        Rajath R Patil
-                        <br />
-                        Front End DEVELOPER
-                    </h1>
-
-                    {/* Company */}
-                    <div className="mt-12">
-                        <p className="text-gray-400 tracking-widest text-lg">Contact:</p>
-                        <p className="text-white text-lg mt-1">
-                            yathriks2pi@gmail.com | 
-                            <a href="https://www.linkedin.com/in/rajath-r-patil-42a1a2236"  target="_blank" className="text-purple-500 mx-2">LinkedIn</a>
-                        </p>
-                    </div>
-                </div><br></br>
-                <div className="text-white bg-gray-600 md:w-1/2 rounded-md p-1">
-                    <h1 className="text-3xl font-semibold text-gray-300 p-2">Portfolio and Projects:</h1>
-                    <ul className="my-2 mx-2">
-                        <li className="hover:bg-gray-500 font-semibold bg-gray-800 items-center px-5 py-2 rounded-lg my-2"><a href="https://my-domain-silk.vercel.app/onepageportfolio" target="_blank" className="text-gary-400 text-2xl">Portfolio <span className="text-gray-500 text-sm my-auto">Click to view</span></a></li>
-                        <li className="hover:bg-gray-500 font-semibold bg-gray-800 items-center px-5 py-2 rounded-lg my-2"><a href="https://my-ecommerce-dashboard-4od4.vercel.app/" target="_blank" className="text-gary-400 text-2xl mx-2">Business Dashboard</a></li>
-                        <li className="hover:bg-gray-500 font-semibold bg-gray-800 items-center px-5 py-2 rounded-lg my-2"><a href="https://web-app-fetures.vercel.app/" target="_blank" className="text-gary-400 text-2xl mx-2">web Feature<span className="text-gray-500 text-sm my-auto">New: Pagination(/pagination), Folder System(/file-explorer)</span></a></li>
-                        <li className="font-semibold bg-gray-800 items-center px-5 cursor-not-allowed py-5 rounded-lg">Node Project coming soon...</li>
-                    </ul>
-                </div>
-            </div>
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-32 pb-24 pt-20">
+          <section id="home" className="scroll-mt-28">
+            <Hero data={profileData} />
+          </section>
+          
+          <section id="experience" className="scroll-mt-28">
+            <Experience data={profileData} />
+          </section>
+          
+          <section id="skills" className="scroll-mt-28">
+            <Skills data={profileData} />
+          </section>
+          
+          <section id="projects" className="scroll-mt-28">
+            <Projects data={profileData} />
+          </section>
+          
+          <section id="education" className="scroll-mt-28">
+            <Education data={profileData} />
+          </section>
+          
+          <section id="contact" className="scroll-mt-28">
+            <ContactMe data={profileData} />
+          </section>
         </div>
-    );
+      </div>
+      <Footer />
+    </>
+  );
 }
+
